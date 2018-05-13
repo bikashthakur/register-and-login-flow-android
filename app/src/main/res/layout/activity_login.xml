@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="4dp"
+    android:padding="24dp"
+    app:cardBackgroundColor="#fafafa"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_sport_hurdle"
+            android:paddingBottom="16dp">
+
+            <include
+                android:id="@+id/app_bar_top_login"
+                layout="@layout/app_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/app_bar_top_login"
+                app:srcCompat="@drawable/ic_nuclear" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_login_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/et_bg"
+                android:hint="Username"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelAnimating="true"
+                app:met_floatingLabelTextSize="12sp" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/et_bg"
+                android:hint="Password"
+                android:inputType="textPassword"
+                app:layout_constraintLeft_toLeftOf="@+id/et_login_username"
+                app:layout_constraintRight_toRightOf="@+id/et_login_username"
+                app:layout_constraintTop_toBottomOf="@+id/et_login_username"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelAnimating="true"
+                app:met_floatingLabelTextSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Forgot password?"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/et_login_password"
+                app:layout_constraintRight_toRightOf="@+id/et_login_password"
+                app:layout_constraintTop_toBottomOf="@+id/et_login_password" />
+
+            <Button
+                android:id="@+id/button_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/grad_button_login"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_forgot_password"
+                app:layout_constraintRight_toRightOf="@+id/tv_forgot_password"
+                app:layout_constraintStart_toStartOf="@+id/et_login_password"
+                app:layout_constraintTop_toBottomOf="@+id/tv_forgot_password" />
+
+            <TextView
+                android:id="@+id/tv_register_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Not have an account?"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="@id/button_login"
+                app:layout_constraintTop_toBottomOf="@id/button_login" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="12dp"
+                app:cardBackgroundColor="@android:color/holo_orange_light"
+                app:cardCornerRadius="@dimen/cardview_default_radius"
+                app:cardElevation="4dp"
+                app:layout_constraintLeft_toRightOf="@id/tv_register_message"
+                app:layout_constraintTop_toBottomOf="@id/button_login">
+
+                <TextView
+                    android:id="@+id/tv_action_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="Register now"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </android.support.v7.widget.CardView>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+</android.support.v7.widget.CardView>

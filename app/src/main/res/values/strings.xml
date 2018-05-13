@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Register and Login Flow</string>
+    <!--user details in activity_main-->
+    <string name="et_hint_username">Username</string>
+    <string name="et_hint_email">Email</string>
+    <string name="et_hint_user_password">Password</string>
+    <string name="btn_login_text">Login</string>
+
+    <string name="user_profile_image_desc">Profile image of the user.</string>
+    <!-- shared preference's keys-->
+    <string name="shared_pref_name">UserCredentials</string>
+    <string name="shared_pref_username_key">username</string>
+    <string name="shared_pref_user_email_key">email</string>
+    <string name="shared_pref_user_password_key">password</string>
+</resources>
